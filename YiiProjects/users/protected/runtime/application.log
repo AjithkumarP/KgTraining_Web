@@ -1,0 +1,8 @@
+2017/05/19 19:41:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php:271
+Stack trace:
+#0 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php(140): CWebApplication->runController('gii')
+#1 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Manoj\YiiProjects\users\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/manoj/YiiProjects/users/index.php?r=gii
+---

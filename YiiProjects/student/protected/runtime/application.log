@@ -1,0 +1,109 @@
+2017/06/05 11:48:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\gii\GiiModule.php:168
+Stack trace:
+#0 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CController.php(255): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php(268): CController->run('')
+#2 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php(140): CWebApplication->runController('gii')
+#3 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Manoj\YiiProjects\student\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Manoj/YiiProjects/student/index.php/gii
+---
+2017/06/05 11:48:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\gii\GiiModule.php:168
+Stack trace:
+#0 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CController.php(255): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php(268): CController->run('')
+#2 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php(140): CWebApplication->runController('gii')
+#3 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Manoj\YiiProjects\student\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Manoj/YiiProjects/student/index.php/gii
+---
+2017/06/05 11:49:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\gii\GiiModule.php:168
+Stack trace:
+#0 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CController.php(255): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php(268): CController->run('')
+#2 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php(140): CWebApplication->runController('gii')
+#3 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\Manoj\YiiProjects\student\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Manoj/YiiProjects/student/index.php/gii
+---
+2017/06/05 13:26:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testphp`.`sem1`, CONSTRAINT `id` FOREIGN KEY (`id`) REFERENCES `student` (`id`)). The SQL statement executed was: INSERT INTO `sem1` (`id`, `year`, `maths`, `physics`, `cprograming`, `drawing`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in D:\xampp\htdocs\Manoj\YiiProjects\student\protected\controllers\Sem1Controller.php (73)
+in D:\xampp\htdocs\Manoj\YiiProjects\student\index.php (13)
+2017/06/05 13:26:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testphp`.`sem1`, CONSTRAINT `id` FOREIGN KEY (`id`) REFERENCES `student` (`id`)). The SQL statement executed was: INSERT INTO `sem1` (`id`, `year`, `maths`, `physics`, `cprograming`, `drawing`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\db\CDbCommand.php:330
+Stack trace:
+#0 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\db\ar\CActiveRecord.php(1002): CDbCommand->execute()
+#1 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\db\ar\CActiveRecord.php(756): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\Manoj\YiiProjects\student\protected\controllers\Sem1Controller.php(73): CActiveRecord->save()
+#3 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\actions\CInlineAction.php(47): Sem1Controller->actionCreate()
+#4 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CController.php(294): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(122): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\filters\CFilter.php(39): CFilterChain->run()
+#7 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CController.php(1073): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\filters\CInlineFilter.php(54): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\filters\CFilterChain.php(120): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CController.php(279): CFilterChain->run()
+#11 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CController.php(256): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php(268): CController->run('create')
+#13 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php(140): CWebApplication->runController('sem1/create')
+#14 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\Manoj\YiiProjects\student\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Manoj/YiiProjects/student/index.php/sem1/create
+HTTP_REFERER=http://10.100.8.134/Manoj/YiiProjects/student/index.php/sem1/create
+---
+2017/06/06 06:21:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php:271
+Stack trace:
+#0 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php(140): CWebApplication->runController('site/login')
+#1 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Manoj\YiiProjects\student\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/manoj/YiiProjects/student/index.php/site/login
+HTTP_REFERER=http://10.100.8.134/manoj/YiiProjects/student/
+---
+2017/06/06 06:21:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php:271
+Stack trace:
+#0 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php(140): CWebApplication->runController('site/login')
+#1 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Manoj\YiiProjects\student\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/manoj/YiiProjects/student/index.php/site/login
+HTTP_REFERER=http://10.100.8.134/manoj/YiiProjects/student/
+---
+2017/06/06 06:21:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php:271
+Stack trace:
+#0 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php(140): CWebApplication->runController('site/login')
+#1 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Manoj\YiiProjects\student\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/manoj/YiiProjects/student/index.php/site/login
+HTTP_REFERER=http://10.100.8.134/manoj/YiiProjects/student/index.php/sem1/index
+---
+2017/06/06 12:08:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php:271
+Stack trace:
+#0 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php(140): CWebApplication->runController('site/login')
+#1 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Manoj\YiiProjects\student\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/manoj/YiiProjects/student/index.php/site/login
+HTTP_REFERER=http://10.100.8.134/manoj/YiiProjects/student/
+---
+2017/06/06 12:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php:271
+Stack trace:
+#0 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php(140): CWebApplication->runController('site/login')
+#1 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Manoj\YiiProjects\student\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/manoj/YiiProjects/student/index.php/site/login
+HTTP_REFERER=http://10.100.8.134/manoj/YiiProjects/student/
+---
+2017/07/17 06:36:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php:271
+Stack trace:
+#0 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\web\CWebApplication.php(140): CWebApplication->runController('site/login')
+#1 D:\xampp\htdocs\Manoj\framework\yii-1.1.18.018a89\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\Manoj\YiiProjects\student\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/manoj/YiiProjects/student/index.php/site/login
+HTTP_REFERER=http://10.100.8.134/manoj/YiiProjects/student/index.php/sem1/index
+---
