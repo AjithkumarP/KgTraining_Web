@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect('localhost', 'admin', 'password', 'Angeliaforos') or die('could not connect to data-base');
+$conn = mysqli_connect('localhost', 'root', '', 'Angeliaforos') or die('could not connect to data-base');
 $query = "select * from messages_table order by senttime";
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 
