@@ -2,10 +2,12 @@
 
 <head>
     <script src="script.js"></script>
-</head>
 
-<body>
-    <input id="name" type="text" />
-    <button id='addbtn' onclick="add()">add</button>
-    <hr/>
-    <table id="namesList"></table>
+    <body>
+        <input type="text" id="naam" />
+        <input type="button" id="addbtn" value="add" onclick="add()" />
+        <input type="button" id="updatebtn" value="update" onclick="update()"hidden/>
+        <hr/>
+        <input type="button" value="refresh" id="loadbtn" onclick="loadTable()" />
+        <p id="hint"></p>
+        <table id="userList"></table>

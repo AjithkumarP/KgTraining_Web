@@ -1,27 +1,55 @@
-var a = [];
-var i = 0;
+var nameArray = ["one", "two"];
+var key;
+var isUpdate = false;
 
 function add() {
-  var x = document.getElementById("name").value;
-  a.push(x);
-  document.getElementById("namesList").innerHTML +=
-    "<tr id='tr" +
-    i +
-    "'><td>" +
-    x +
-    "</td><td><button onclick='del(" +
-    i +
-    ")'>delete</button></td><td><button onclick='edit(" +
-    i +
-    ")'>update</button></td></tr>";
-
-  i++;
+  var inputField = document.getElementById("naam");
+  var name = inputField.value;
+  nameArray.push(name);
+  loadTable();
+  inputField.value = "";
 }
 
-function del(y) {
-  document.getElementById("tr" + y).hidden = true;
+function loadTable() {
+  var userList = document.getElementById("userList");
+  userList.innerHTML = "";
+  for (var i = 0; i < nameArray.length; i++) {
+    userList.innerHTML +=
+      "<tr><td><p>" +
+      nameArray[i] +
+      "<td><button  onclick='remove(" +
+      i +
+      ")'>delete" +
+      "<td><button  onclick='edit(" +
+      i +
+      ")'>edit";
+  }
+
+  if (nameArray.length != 0) {
+    document.getElementById("loadbtn").hidden = true;
+    document.getElementById("hint").innerHTML = "";
+  } else {
+    document.getElementById("loadbtn").hidden = false;
+    document.getElementById("hint").innerHTML = "records empty";
+  }
 }
 
-function edit(z) {
-  document.getElementById("name").value = a[z];
+function remove(id) {
+  nameArray.splice(id, 1);
+  loadTable();
+}
+
+function edit(id) {
+  document.getElementById("naam").value = nameArray[id];
+  key = id;
+  document.getElementById("addbtn").hidden = true;
+  document.getElementById("updatebtn").hidden = false;
+}
+
+function update() {
+  nameArray[key] = document.getElementById("naam").value;
+  document.getElementById("naam").value = "";
+  document.getElementById("updatebtn").hidden = true;
+  document.getElementById("addbtn").hidden = false;
+  loadTable();
 }
