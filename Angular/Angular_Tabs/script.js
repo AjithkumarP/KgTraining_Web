@@ -1,13 +1,19 @@
-var app = angular.module("myApp", ["ngSanitize"]);
+var app = angular.module("myApp", []);
 
-app.controller("myCtrl", function($scope) {
+app.controller("myCtrl", function($scope, $http) {
   $scope.homebtn = function() {
-    $scope.target = "<h1>this is about_page";
+    $http.get("about.txt").then(function(response) {
+      $scope.target = response.data;
+    });
   };
   $scope.addbtn = function() {
-    $scope.target = "<h1>this is to add nwe employee";
+    $http.get("addemp.txt").then(function(response) {
+      $scope.target = response.data;
+    });
   };
   $scope.showlist = function() {
-    $scope.target = "<h1>this is to display existing employees";
+    $http.get("emplist.txt").then(function(response) {
+      $scope.target = response.data;
+    });
   };
 });
