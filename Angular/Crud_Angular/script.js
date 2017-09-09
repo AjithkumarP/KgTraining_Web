@@ -1,4 +1,4 @@
-var ArrayList = ["manoj", "kausalya"];
+var ArrayList = ["manoj", "manisha"];
 var app = angular.module("myApp", []);
 var key = 0;
 
